@@ -7,11 +7,17 @@ fun main() {
         println(salario)
     }
 
+    //Versão MAX e MIN  com solução alternativa
     println("-+-------+-")
     println("Maior Salario:${salarios.maxOf { it }}")
     println("Menor Salario:${salarios.minOf { it }}")
     println("Media Salarial: ${salarios.average()}")
 
+    //Versão MAX e MIN com solução recomendada
+    println("-+-------+-")
+    println("Maior Salario:${salarios.maxOrNull()}")
+    println("Menor Salario:${salarios.minOrNull()}")
+    println("Media Salarial: ${salarios.average()}")
 
     val salariosMaiorQue2500 = salarios.filter { it > 2500.0 }
     println("-+-------+-")
